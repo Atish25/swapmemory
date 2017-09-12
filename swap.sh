@@ -19,13 +19,8 @@ read -p 'Would you like to continue [y/n]: ' answer
         echo 'GOOD BYE'
         exit 1
     fi
-# does the swap file already exist?
-#grep -q "swap10" /etc/fstab
-
-# if not then create it
-#if [ $? -ne 0 ]; then
-#        echo 'swapfile not found. Adding swapfile.'
-#        fallocate -l ${swapsize}M /swap10
+ # IF DD COMMAND WILL NOT WORK COMMENT DD && UN COMMENT FALLOCATE
+#        fallocate -l ${swapsize}M /${swapname}
         dd if=/dev/zero of=/${swapname} bs=1M count=${swapsize}
         chmod 600 /${swapname}
         mkswap /${swapname}
