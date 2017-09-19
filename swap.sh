@@ -1,5 +1,5 @@
 #!/bin/bash
-echo -e "\n########################################################### CREATE SWAP MEMORY ##################################################################\n"
+echo -e "\n############# CREATE SWAP MEMORY ##############\n"
 echo -e "\n####SCRIPT IS DONE BY ATISH\n"
 # size of swapfile in megabytes
 #swapsize=1024
