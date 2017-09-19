@@ -20,8 +20,8 @@ read -p 'Would you like to continue [y/n]: ' answer
         exit 1
     fi
  # IF DD COMMAND WILL NOT WORK COMMENT DD && UN COMMENT FALLOCATE
-#        fallocate -l ${swapsize}M /${swapname}
-        dd if=/dev/zero of=/${swapname} bs=1M count=${swapsize}
+       fallocate -l ${swapsize}M /${swapname}
+ #       dd if=/dev/zero of=/${swapname} bs=1M count=${swapsize}
         chmod 600 /${swapname}
         mkswap /${swapname}
         swapon /${swapname}
