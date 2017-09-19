@@ -5,7 +5,6 @@ Clone the repositry && Run the following command
 # cd swapmemory
 # sh swap.sh
 
---------enter the swapfilename e.g swap10
---------enter the swapmemory value if RAM size is 2Gb use 1024 or more than 4gb use 2096
+-enter the swapfilename e.g swap10 . enter the swapmemory value if RAM size is 2Gb use 1024 or more than 4gb use 2096
 
 Thank You .comment please ..
